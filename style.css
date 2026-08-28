@@ -1,0 +1,1018 @@
+/* =====================================================
+   CSS PORTOFOLIO NURFAUZIAH UMAR
+   Implementasi Modul CSS 3, 4, 5 dan 6
+   ===================================================== */
+
+
+/* =====================================================
+   1. DASAR / MODUL 3
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f7f4fb;
+
+    color: #302a3f;
+
+    line-height: 1.6;
+}
+
+
+/* Selector HTML */
+
+h1,
+h2,
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p {
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   2. NAVBAR
+   MODUL 5 + MODUL 6
+   ===================================================== */
+
+.navbar {
+    width: 100%;
+
+    background:
+        linear-gradient(
+            to right,
+            #6c3fc9,
+            #9a6be8
+        );
+
+    border-radius: 0 0 12px 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.12);
+
+    position: relative;
+
+    z-index: 100;
+}
+
+
+.nav-container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    overflow: visible;
+}
+
+
+/* Logo */
+
+.logo {
+    float: left;
+
+    width: 48px;
+    height: 48px;
+
+    margin: 10px 0;
+
+    background-color: white;
+
+    color: #6c3fc9;
+
+    border-radius: 50%;
+
+    text-align: center;
+
+    line-height: 48px;
+
+    font-weight: bold;
+
+    font-size: 17px;
+}
+
+
+/* Menu */
+
+#menu {
+    float: right;
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+#menu li {
+    position: relative;
+
+    float: left;
+
+    list-style: none;
+
+    height: 68px;
+}
+
+
+#menu li a {
+    display: block;
+
+    padding: 0 19px;
+
+    margin: 16px 0;
+
+    line-height: 36px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    border-left: 1px solid rgba(255,255,255,0.18);
+
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease;
+}
+
+
+#menu li:first-child a {
+    border-left: none;
+}
+
+
+#menu li a:hover {
+    color: #f1e9ff;
+
+    background-color:
+        rgba(255,255,255,0.12);
+
+    border-radius: 5px;
+}
+
+
+#menu li a.active {
+    background-color:
+        rgba(255,255,255,0.20);
+
+    border-radius: 5px;
+}
+
+
+/* =====================================================
+   3. DROPDOWN
+   MODUL 6
+   ===================================================== */
+
+.dropdown-content {
+    position: absolute;
+
+    top: 67px;
+
+    left: 0;
+
+    width: 180px;
+
+    background-color: white;
+
+    border-radius: 0 0 8px 8px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.15);
+
+    display: none;
+
+    list-style-type: none;
+}
+
+
+.dropdown-content li {
+    float: none !important;
+
+    width: 100%;
+
+    height: auto !important;
+}
+
+
+.dropdown-content li a {
+    display: block;
+
+    margin: 0 !important;
+
+    padding: 12px 17px !important;
+
+    line-height: 22px !important;
+
+    color: #40394f !important;
+
+    border: none !important;
+
+    border-bottom:
+        1px solid #eee !important;
+
+    background-color: white !important;
+
+    border-radius: 0 !important;
+}
+
+
+.dropdown-content li a:hover {
+    background-color: #f0e8ff !important;
+
+    color: #6c3fc9 !important;
+}
+
+
+.dropdown-content li a.sub-active {
+    color: #6c3fc9 !important;
+
+    background-color: #f4eeff !important;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* =====================================================
+   4. CLEAR FLOAT
+   MODUL 5
+   ===================================================== */
+
+.navbar::after,
+.nav-container::after,
+.home-container::after,
+.about-box::after,
+.skills-wrapper::after,
+.education-card::after,
+.contact-box::after {
+    content: "";
+
+    display: table;
+
+    clear: both;
+}
+
+
+/* =====================================================
+   5. HOME
+   ===================================================== */
+
+.home {
+    min-height: calc(100vh - 68px);
+
+    padding: 75px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f4edff,
+            #ffffff
+        );
+}
+
+
+.home-container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+.home-photo {
+    float: left;
+
+    width: 43%;
+
+    text-align: center;
+
+    padding: 15px;
+}
+
+
+.home-content {
+    float: left;
+
+    width: 57%;
+
+    padding: 55px 20px;
+}
+
+
+/* =====================================================
+   6. FOTO
+   MODUL 4
+   ===================================================== */
+
+.photo-frame {
+    width: 280px;
+
+    height: 280px;
+
+    margin: auto;
+
+    padding: 8px;
+
+    background-color: white;
+
+    border:
+        4px solid #8b5bd6;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 12px 30px
+        rgba(108,63,201,0.20);
+
+    overflow: hidden;
+}
+
+
+.photo-frame img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    opacity: 0.88;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Efek hover sesuai materi Modul 4 */
+
+.photo-frame img:hover {
+    opacity: 1;
+
+    transform: scale(1.04);
+}
+
+
+.photo-caption {
+    margin-top: 13px;
+
+    color: #6c3fc9;
+
+    font-weight: bold;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   7. HOME TEXT
+   ===================================================== */
+
+.small-title {
+    color: #7a4bc7;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+
+.home-content h1 {
+    font-size: 48px;
+
+    line-height: 1.2;
+
+    color: #302a3f;
+
+    margin-bottom: 8px;
+}
+
+
+.home-content h2 {
+    font-size: 22px;
+
+    color: #7a4bc7;
+
+    margin-bottom: 20px;
+}
+
+
+.home-description {
+    max-width: 520px;
+
+    color: #625c6e;
+
+    font-size: 18px;
+
+    margin-bottom: 18px;
+}
+
+
+.motto {
+    color: #6c3fc9;
+
+    font-style: italic;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   8. BUTTON
+   ===================================================== */
+
+.button {
+    display: inline-block;
+
+    padding: 11px 24px;
+
+    color: white;
+
+    text-decoration: none;
+
+    background:
+        linear-gradient(
+            to right,
+            #6c3fc9,
+            #9a6be8
+        );
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 18px
+        rgba(108,63,201,0.25);
+}
+
+
+/* =====================================================
+   9. HALAMAN UMUM
+   ===================================================== */
+
+.page-section {
+    min-height: calc(100vh - 130px);
+
+    padding: 65px 0;
+}
+
+
+.container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.section-heading p {
+    color: #7a4bc7;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.section-heading h1 {
+    font-size: 38px;
+
+    color: #302a3f;
+}
+
+
+/* =====================================================
+   10. ABOUT
+   ===================================================== */
+
+.about-box {
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,0.07);
+}
+
+
+.about-photo {
+    float: left;
+
+    width: 36%;
+
+    text-align: center;
+
+    padding: 10px;
+}
+
+
+.about-frame {
+    width: 245px;
+
+    height: 300px;
+
+    border-radius: 12px;
+}
+
+
+.about-frame img {
+    border-radius: 7px;
+}
+
+
+.about-content {
+    float: left;
+
+    width: 64%;
+
+    padding: 12px 25px;
+}
+
+
+.about-content h2 {
+    color: #6c3fc9;
+
+    margin-bottom: 18px;
+}
+
+
+.about-content p {
+    color: #625c6e;
+
+    margin-bottom: 15px;
+
+    text-align: justify;
+}
+
+
+/* =====================================================
+   11. SKILLS
+   ===================================================== */
+
+.skills-wrapper {
+    width: 100%;
+}
+
+
+.skill-card {
+    float: left;
+
+    width: 31.33%;
+
+    min-height: 215px;
+
+    margin: 1%;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-left:
+        5px solid #8b5bd6;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 6px 18px
+        rgba(0,0,0,0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.skill-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 25px
+        rgba(108,63,201,0.16);
+}
+
+
+.skill-number {
+    display: block;
+
+    color: #9a6be8;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+
+.skill-card h2 {
+    font-size: 21px;
+
+    color: #302a3f;
+
+    margin-bottom: 12px;
+}
+
+
+.skill-card p {
+    color: #625c6e;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   12. EDUCATION
+   ===================================================== */
+
+.education-wrapper {
+    width: 90%;
+
+    margin: auto;
+}
+
+
+.education-card {
+    background-color: white;
+
+    margin-bottom: 20px;
+
+    padding: 22px;
+
+    border-left:
+        5px solid #8b5bd6;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 6px 17px
+        rgba(0,0,0,0.07);
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+.education-card:hover {
+    transform: translateX(6px);
+}
+
+
+.education-card.current {
+    border-left-color: #6c3fc9;
+
+    background-color: #fbf9ff;
+}
+
+
+.education-year {
+    float: left;
+
+    width: 23%;
+
+    padding: 8px;
+
+    color: #7a4bc7;
+
+    font-weight: bold;
+}
+
+
+.education-info {
+    float: left;
+
+    width: 77%;
+
+    padding: 5px 15px;
+}
+
+
+.education-info h2 {
+    color: #302a3f;
+
+    font-size: 20px;
+
+    margin-bottom: 6px;
+}
+
+
+.education-info p {
+    color: #625c6e;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   13. CONTACT
+   ===================================================== */
+
+.contact-box {
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,0.07);
+}
+
+
+.contact-intro {
+    float: left;
+
+    width: 42%;
+
+    padding: 15px;
+}
+
+
+.contact-intro h2 {
+    color: #6c3fc9;
+
+    margin-bottom: 12px;
+}
+
+
+.contact-intro p {
+    color: #625c6e;
+}
+
+
+.contact-list {
+    float: left;
+
+    width: 58%;
+
+    padding: 5px 15px;
+}
+
+
+.contact-item {
+    margin-bottom: 15px;
+
+    padding: 17px;
+
+    background-color: #f5efff;
+
+    border-radius: 7px;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.contact-item:hover {
+    background-color: #ece1ff;
+
+    transform: translateX(5px);
+}
+
+
+.contact-item span {
+    display: inline-block;
+
+    width: 110px;
+
+    color: #6c3fc9;
+
+    font-weight: bold;
+}
+
+
+.contact-item a {
+    color: #514a5e;
+
+    text-decoration: none;
+}
+
+
+.contact-item a:hover {
+    color: #6c3fc9;
+
+    text-decoration: underline;
+}
+
+
+/*
+   Email sengaja bukan <a>.
+   Jadi tidak bisa diklik untuk membuka email.
+*/
+
+.email-text {
+    display: inline;
+
+    color: #514a5e;
+}
+
+
+/* =====================================================
+   14. FOOTER
+   ===================================================== */
+
+footer {
+    clear: both;
+
+    background:
+        linear-gradient(
+            to right,
+            #5631a8,
+            #8055ce
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 23px 10px;
+
+    margin-top: 20px;
+}
+
+
+footer p {
+    margin: 4px;
+
+    font-size: 14px;
+}
+
+
+footer p:last-child {
+    font-style: italic;
+
+    opacity: 0.9;
+}
+
+
+/* =====================================================
+   15. RESPONSIVE
+   ===================================================== */
+
+@media screen and (max-width: 768px) {
+
+
+    .nav-container {
+        width: 95%;
+    }
+
+
+    .logo {
+        float: none;
+
+        margin: 10px auto;
+    }
+
+
+    #menu {
+        float: none;
+
+        text-align: center;
+    }
+
+
+    #menu li {
+        float: none;
+
+        display: inline-block;
+
+        height: 52px;
+    }
+
+
+    #menu li a {
+        margin: 5px 0;
+
+        padding: 0 9px;
+
+        line-height: 40px;
+
+        font-size: 12px;
+    }
+
+
+    .dropdown-content {
+        top: 47px;
+    }
+
+
+    .home-photo,
+    .home-content,
+    .about-photo,
+    .about-content,
+    .contact-intro,
+    .contact-list {
+        float: none;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .home-content {
+        padding: 35px 10px;
+    }
+
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+
+    .home-description {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .about-content {
+        padding: 20px 5px;
+    }
+
+
+    .about-content p {
+        text-align: left;
+    }
+
+
+    .skill-card {
+        float: none;
+
+        width: 100%;
+
+        margin: 10px 0;
+    }
+
+
+    .education-year,
+    .education-info {
+        float: none;
+
+        width: 100%;
+    }
+
+
+    .education-info {
+        padding: 5px 8px;
+    }
+
+
+    .contact-item span {
+        display: block;
+
+        width: 100%;
+
+        margin-bottom: 5px;
+    }
+
+}
