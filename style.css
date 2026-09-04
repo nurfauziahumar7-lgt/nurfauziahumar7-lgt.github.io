@@ -316,6 +316,16 @@ MODUL 5
     align-items: center;
 }
 
+.home-description {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto 18px;
+    text-align: center;
+    color: #625c6e;
+    font-size: 18px;
+}
+
 /* =====================================================
 6. FOTO
 MODUL 4
@@ -424,9 +434,7 @@ MODUL 4
 
     font-size: 18px;
 
-    margin: 0 auto 18px;
-
-    text-align: center;
+    margin-bottom: 18px;
 }
 
 
