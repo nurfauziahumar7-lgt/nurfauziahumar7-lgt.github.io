@@ -294,22 +294,20 @@ MODUL 5
 
 
 .home-container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.home-photo {
-    width: 100%;
-    text-align: center;
-    padding: 15px;
+.photo-frame {
+    float: none;
+    width: auto;
+    margin: 0 auto;
 }
 
 .home-content {
+    float: none;
     width: 100%;
     padding: 20px;
     text-align: center;
